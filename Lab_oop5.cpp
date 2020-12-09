@@ -18,7 +18,7 @@ void func3(Base& obj) {
 int main()
 {
 	setlocale(LC_ALL, "rus");
-	cout << "\nПередача объектов как параметров в функции:\n\n";
+	cout << "Передача объектов как параметров в функции:\n\n";
 	cout << "Base:\n\n";
 	Base base1 = new Base();
 	func1(base1);
