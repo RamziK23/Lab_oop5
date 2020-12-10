@@ -32,7 +32,22 @@ public:
 		cout << "Конструктор копирующий Plane\n";
 	}
 
-	
+	virtual bool isA(string classname) {
+		cout << "Виртуальный метод isA Plane\n";
+		if (classname == CN)
+			return 1;
+		else
+			return 0;
+	}
+
+	virtual string ClassName() {
+		cout << "Виртуальный метод ClassName Plane\n";
+		return CN;
+	}
+
+	void Method() {
+		cout << "Метод Plane\n";
+	}
 
 	virtual ~Plane() {
 		cout << "Деструктор Plane\n";
@@ -67,7 +82,23 @@ public:
 		cout << "Конструктор копирующий Il_2\n";
 	}
 
+	bool isA(string classname) {
+		cout << "Невиртуальный метод isA Il_2\n";
+		if (classname == CN)
+			return 1;
+		else
+			return 0;
 
+	}
+
+	string ClassName() {
+		cout << "Невиртуальный метод ClassName Il_2\n";
+		return CN;
+	}
+
+	void Method() {
+		cout << "Метод Il_2\n";
+	}
 
 	~Il_2() {
 		cout << "Деструктор Il_2\n";
