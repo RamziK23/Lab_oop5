@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include "BD.h"
+#include "PL.h"
 
 using namespace std;
 
@@ -18,6 +19,11 @@ void func3(Base& obj) {
 int main()
 {
 	setlocale(LC_ALL, "rus");
+
+	Plane* plane1 = new Plane();
+	Il_2* il_2 = new Il_2();
+	Plane* plane2 = new Plane;
+
 	cout << "Передача объектов как параметров в функции:\n\n";
 	cout << "Base:\n\n";
 	Base base1 = new Base();

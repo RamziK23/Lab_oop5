@@ -32,6 +32,8 @@ public:
 		cout << "Конструктор копирующий Plane\n";
 	}
 
+	
+
 	virtual ~Plane() {
 		cout << "Деструктор Plane\n";
 	}
@@ -64,6 +66,8 @@ public:
 		this->shoot = C.shoot;
 		cout << "Конструктор копирующий Il_2\n";
 	}
+
+
 
 	~Il_2() {
 		cout << "Деструктор Il_2\n";
